@@ -1,1 +1,1 @@
-# All-My-Code-Snippets
+### This contains chunks of specific code snippets maintained separately.
