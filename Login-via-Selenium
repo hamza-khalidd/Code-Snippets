@@ -1,0 +1,8 @@
+username = driver.find_element(By.ID, 'username') # By.ID / By.Classname / By.XPATH / Many Other Tags Also Available
+password = driver.find_element(By.ID, 'password')
+login = driver.find_element(By.ID, 'Login')
+
+username.send_keys('your username / email')
+password.send_keys('your password')
+
+login.click()
