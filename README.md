@@ -3,8 +3,3 @@
 #### Selenium:
   → Connecting to Chrome Web Driver dynamically (No  Need For Installation).<br/>
   → Finding Elements Via Multiple Tags, Send Keys and Clicking on Buttons.
-  
- 
-#### Pandas:
-  → Merging Multiple DataFrames.<br/>
-  → Playing with incorrect / null data.
