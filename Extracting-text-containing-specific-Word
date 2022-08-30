@@ -1,0 +1,33 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
+import time
+import numpy as np
+import pandas as pd
+import re
+
+
+
+# Driver Settings
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--incognito")
+# chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
+
+
+
+lst2 = []
+for i in lst:
+    lst3 = []
+    driver.get(i)
+    try:
+        txt = driver.find_element_by_xpath("//*[contains(text(), 'GmbH')]")
+        lst3.append(txt.get_attribute('innerHTML'))
+        lst3.append(i)
+        lst2.append(lst3)
+    except:
+        lst3.append('None')
+        lst3.append(i)
+        lst2.append(lst3)
