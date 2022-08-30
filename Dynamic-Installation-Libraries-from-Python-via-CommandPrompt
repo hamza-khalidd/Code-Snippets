@@ -1,0 +1,6 @@
+import subprocess
+
+lst = ['pip install scrapy', 'pip install pandas', 'pip install numpy', 'pip install selenium', 'pip install bs4', 'pip install webdriver_manager']
+for i in lst:
+    r = subprocess.check_output(i, shell=True)
+    print(r)
